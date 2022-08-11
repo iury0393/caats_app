@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45602A083EAC50310CB9B131 /* Pods_caats_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784744C8FEC45DA53654C35A /* Pods_caats_app.framework */; };
 		8A73553228A5AF6400678D21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73553128A5AF6400678D21 /* AppDelegate.swift */; };
 		8A73553428A5AF6400678D21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73553328A5AF6400678D21 /* SceneDelegate.swift */; };
 		8A73553628A5AF6400678D21 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73553528A5AF6400678D21 /* WelcomeViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33D81B51E259C67C756739FE /* Pods-caats_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caats_app.debug.xcconfig"; path = "Target Support Files/Pods-caats_app/Pods-caats_app.debug.xcconfig"; sourceTree = "<group>"; };
+		784744C8FEC45DA53654C35A /* Pods_caats_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_caats_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A73552E28A5AF6400678D21 /* caats_app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = caats_app.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A73553128A5AF6400678D21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A73553328A5AF6400678D21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		8A73553A28A5AF6500678D21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A73553D28A5AF6500678D21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A73553F28A5AF6500678D21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC7AEAA80BABE4DC8D735B63 /* Pods-caats_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caats_app.release.xcconfig"; path = "Target Support Files/Pods-caats_app/Pods-caats_app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45602A083EAC50310CB9B131 /* Pods_caats_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D2E9B439AF06D96C077967A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33D81B51E259C67C756739FE /* Pods-caats_app.debug.xcconfig */,
+				EC7AEAA80BABE4DC8D735B63 /* Pods-caats_app.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2BB22939A7F758DB25B0E40A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				784744C8FEC45DA53654C35A /* Pods_caats_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A73552528A5AF6400678D21 = {
 			isa = PBXGroup;
 			children = (
 				8A73553028A5AF6400678D21 /* caats_app */,
 				8A73552F28A5AF6400678D21 /* Products */,
+				1D2E9B439AF06D96C077967A /* Pods */,
+				2BB22939A7F758DB25B0E40A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A73554228A5AF6500678D21 /* Build configuration list for PBXNativeTarget "caats_app" */;
 			buildPhases = (
+				B1F8B270B6794A2FAD4696DB /* [CP] Check Pods Manifest.lock */,
 				8A73552A28A5AF6400678D21 /* Sources */,
 				8A73552B28A5AF6400678D21 /* Frameworks */,
 				8A73552C28A5AF6400678D21 /* Resources */,
+				18408BF69BEE19EB28CE8259 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -148,6 +175,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18408BF69BEE19EB28CE8259 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-caats_app/Pods-caats_app-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-caats_app/Pods-caats_app-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-caats_app/Pods-caats_app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1F8B270B6794A2FAD4696DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-caats_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8A73552A28A5AF6400678D21 /* Sources */ = {
@@ -298,6 +367,7 @@
 		};
 		8A73554328A5AF6500678D21 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33D81B51E259C67C756739FE /* Pods-caats_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +396,7 @@
 		};
 		8A73554428A5AF6500678D21 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC7AEAA80BABE4DC8D735B63 /* Pods-caats_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
