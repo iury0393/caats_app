@@ -5,4 +5,14 @@
 //  Created by Iury Vasconcelos on 11/08/22.
 //
 
-import Foundation
+import UIKit
+
+class LoginViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+
+}
