@@ -21,6 +21,7 @@
 		8A73555228A5B3AB00678D21 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73555128A5B3AB00678D21 /* RegisterViewController.swift */; };
 		8A73555428A5B40400678D21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73555328A5B40400678D21 /* HomeViewController.swift */; };
 		8A73555B28AA806D00678D21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73555A28AA806D00678D21 /* Constants.swift */; };
+		8A73555E28AAAED100678D21 /* PopupView in Frameworks */ = {isa = PBXBuildFile; productRef = 8A73555D28AAAED100678D21 /* PopupView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A73555E28AAAED100678D21 /* PopupView in Frameworks */,
 				45602A083EAC50310CB9B131 /* Pods_caats_app.framework in Frameworks */,
 				8A73554A28A5B24700678D21 /* FirebaseAuth in Frameworks */,
 				8A73554C28A5B24700678D21 /* FirebaseFirestore in Frameworks */,
@@ -94,11 +96,11 @@
 		8A73553028A5AF6400678D21 /* caats_app */ = {
 			isa = PBXGroup;
 			children = (
-				8A73555928AA805B00678D21 /* Utils */,
 				8A73553128A5AF6400678D21 /* AppDelegate.swift */,
 				8A73553328A5AF6400678D21 /* SceneDelegate.swift */,
 				8A73554628A5AF8700678D21 /* View */,
 				8A73554728A5AF9E00678D21 /* Controller */,
+				8A73555928AA805B00678D21 /* Utils */,
 				8A73553A28A5AF6500678D21 /* Assets.xcassets */,
 				8A73553F28A5AF6500678D21 /* Info.plist */,
 				8A73554D28A5B30200678D21 /* GoogleService-Info.plist */,
@@ -155,6 +157,7 @@
 			packageProductDependencies = (
 				8A73554928A5B24700678D21 /* FirebaseAuth */,
 				8A73554B28A5B24700678D21 /* FirebaseFirestore */,
+				8A73555D28AAAED100678D21 /* PopupView */,
 			);
 			productName = caats_app;
 			productReference = 8A73552E28A5AF6400678D21 /* caats_app.app */;
@@ -186,6 +189,7 @@
 			mainGroup = 8A73552528A5AF6400678D21;
 			packageReferences = (
 				8A73554828A5B24700678D21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				8A73555C28AAAED100678D21 /* XCRemoteSwiftPackageReference "PopupView" */,
 			);
 			productRefGroup = 8A73552F28A5AF6400678D21 /* Products */;
 			projectDirPath = "";
@@ -495,6 +499,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		8A73555C28AAAED100678D21 /* XCRemoteSwiftPackageReference "PopupView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/PopupView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -507,6 +519,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8A73554828A5B24700678D21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		8A73555D28AAAED100678D21 /* PopupView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A73555C28AAAED100678D21 /* XCRemoteSwiftPackageReference "PopupView" */;
+			productName = PopupView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

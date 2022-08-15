@@ -5,5 +5,6 @@ target 'caats_app' do
 
   # Pods for caats_app
   pod 'Alamofire', '~> 5.6'
+  pod 'IQKeyboardManagerSwift', '~> 6.5'
 
 end
