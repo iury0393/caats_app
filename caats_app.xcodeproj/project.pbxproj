@@ -20,6 +20,7 @@
 		8A73555028A5B39E00678D21 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73554F28A5B39E00678D21 /* LoginViewController.swift */; };
 		8A73555228A5B3AB00678D21 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73555128A5B3AB00678D21 /* RegisterViewController.swift */; };
 		8A73555428A5B40400678D21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73555328A5B40400678D21 /* HomeViewController.swift */; };
+		8A73555B28AA806D00678D21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73555A28AA806D00678D21 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		8A73554F28A5B39E00678D21 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8A73555128A5B3AB00678D21 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8A73555328A5B40400678D21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		8A73555A28AA806D00678D21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EC7AEAA80BABE4DC8D735B63 /* Pods-caats_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caats_app.release.xcconfig"; path = "Target Support Files/Pods-caats_app/Pods-caats_app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -92,6 +94,7 @@
 		8A73553028A5AF6400678D21 /* caats_app */ = {
 			isa = PBXGroup;
 			children = (
+				8A73555928AA805B00678D21 /* Utils */,
 				8A73553128A5AF6400678D21 /* AppDelegate.swift */,
 				8A73553328A5AF6400678D21 /* SceneDelegate.swift */,
 				8A73554628A5AF8700678D21 /* View */,
@@ -121,6 +124,14 @@
 				8A73555328A5B40400678D21 /* HomeViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		8A73555928AA805B00678D21 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8A73555A28AA806D00678D21 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +261,7 @@
 				8A73555228A5B3AB00678D21 /* RegisterViewController.swift in Sources */,
 				8A73553628A5AF6400678D21 /* WelcomeViewController.swift in Sources */,
 				8A73553228A5AF6400678D21 /* AppDelegate.swift in Sources */,
+				8A73555B28AA806D00678D21 /* Constants.swift in Sources */,
 				8A73553428A5AF6400678D21 /* SceneDelegate.swift in Sources */,
 				8A73555428A5B40400678D21 /* HomeViewController.swift in Sources */,
 			);
