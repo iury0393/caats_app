@@ -7,8 +7,10 @@
 
 import UIKit
 import FirebaseAuth
+import Alamofire
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController {    
+    @IBOutlet weak var randomCatImage: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,9 @@ class HomeViewController: UIViewController {
         } catch let signOutError as NSError {
             print("Error signing out: %@", signOutError)
         }
-        
+    }
+    
+    @IBAction func randomPressed(_ sender: UIButton) {
+
     }
 }
