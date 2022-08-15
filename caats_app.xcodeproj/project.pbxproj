@@ -100,7 +100,6 @@
 				8A73554628A5AF8700678D21 /* View */,
 				8A73554728A5AF9E00678D21 /* Controller */,
 				8A73553A28A5AF6500678D21 /* Assets.xcassets */,
-				8A73553C28A5AF6500678D21 /* LaunchScreen.storyboard */,
 				8A73553F28A5AF6500678D21 /* Info.plist */,
 				8A73554D28A5B30200678D21 /* GoogleService-Info.plist */,
 			);
@@ -111,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				8A73553728A5AF6400678D21 /* Main.storyboard */,
+				8A73553C28A5AF6500678D21 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";

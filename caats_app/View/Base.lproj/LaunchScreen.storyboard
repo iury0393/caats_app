@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashBackground" translatesAutoresizingMaskIntoConstraints="NO" id="0Yf-h3-uri">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" translatesAutoresizingMaskIntoConstraints="NO" id="yQt-ue-sKm">
+                                <rect key="frame" x="0.0" y="240" width="414" height="416"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yQt-ue-sKm" firstAttribute="centerY" secondItem="0Yf-h3-uri" secondAttribute="centerY" id="1xI-Nt-kE4"/>
+                            <constraint firstAttribute="bottom" secondItem="0Yf-h3-uri" secondAttribute="bottom" id="2S9-K7-GHT"/>
+                            <constraint firstItem="0Yf-h3-uri" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9ir-ge-qb3"/>
+                            <constraint firstItem="yQt-ue-sKm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="196" id="Far-1f-bQl"/>
+                            <constraint firstItem="0Yf-h3-uri" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="HdD-9H-EOa"/>
+                            <constraint firstItem="yQt-ue-sKm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fwX-4P-WDh"/>
+                            <constraint firstItem="yQt-ue-sKm" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qEh-LG-CQ9"/>
+                            <constraint firstItem="0Yf-h3-uri" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xdC-Dg-AVe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash" width="500" height="500"/>
+        <image name="SplashBackground" width="640" height="1136"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
