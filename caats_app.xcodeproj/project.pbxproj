@@ -414,6 +414,7 @@
 				DEVELOPMENT_TEAM = P2J629LV45;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = caats_app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Caats;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -443,6 +444,7 @@
 				DEVELOPMENT_TEAM = P2J629LV45;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = caats_app/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Caats;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
