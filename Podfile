@@ -5,8 +5,6 @@ target 'caats_app' do
 
   # Pods for caats_app
   pod 'Alamofire', '~> 5.6'
-  pod 'AlamofireImage', '~> 4.1'
-  pod 'AlamofireNetworkActivityIndicator', '~> 3.1'
   pod 'IQKeyboardManagerSwift', '~> 6.5'
 
 end
