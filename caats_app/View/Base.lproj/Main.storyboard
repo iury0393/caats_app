@@ -130,6 +130,9 @@
                                         <state key="normal" title="Register">
                                             <color key="titleColor" red="0.10692868379999999" green="0.26320910450000001" blue="0.28432592750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerPressed:" destination="hZC-pX-yTJ" eventType="touchUpInside" id="vhb-zT-TBd"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="vkZ-Ym-9mp">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
@@ -220,6 +223,9 @@
                                         <state key="normal" title="Log In">
                                             <color key="titleColor" red="0.10692868379999999" green="0.26320910450000001" blue="0.28432592750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="VzY-ZS-KUl" eventType="touchUpInside" id="mLs-WK-eWv"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="BTc-TF-3Cm">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
@@ -268,60 +274,38 @@
             </objects>
             <point key="canvasLocation" x="2091" y="-283"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="9e2-uu-1Kb">
             <objects>
-                <viewController id="wxB-fq-Njw" sceneMemberID="viewController">
+                <viewController id="wxB-fq-Njw" customClass="HomeViewController" customModule="caats_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="t0X-3c-6DV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lon-fh-64E">
-                                <rect key="frame" x="0.0" y="88" width="414" height="152"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lon-fh-64E">
+                                <rect key="frame" x="0.0" y="88" width="414" height="138.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="3iJ-iM-CmQ">
-                                        <rect key="frame" x="58" y="15" width="298" height="137"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="3iJ-iM-CmQ">
+                                        <rect key="frame" x="8" y="15" width="398" height="137"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Any word" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AkU-vp-RJ3">
-                                        <rect key="frame" x="106" y="47" width="202" height="45"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="202" id="NAp-63-YO4"/>
-                                        </constraints>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Any word" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AkU-vp-RJ3">
+                                        <rect key="frame" x="39" y="35" width="335" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" name="BrandBlue"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="3iJ-iM-CmQ" firstAttribute="leading" secondItem="lon-fh-64E" secondAttribute="leading" constant="58" id="6hf-Ew-Y5n"/>
-                                    <constraint firstAttribute="height" constant="152" id="8Ff-Yd-Lhi"/>
-                                    <constraint firstAttribute="width" constant="414" id="FdM-pP-bTm"/>
-                                    <constraint firstItem="AkU-vp-RJ3" firstAttribute="centerX" secondItem="3iJ-iM-CmQ" secondAttribute="centerX" id="On0-2m-Jtk"/>
-                                    <constraint firstAttribute="bottom" secondItem="AkU-vp-RJ3" secondAttribute="bottom" constant="60" id="Rgr-4v-q5g"/>
-                                    <constraint firstAttribute="trailing" secondItem="3iJ-iM-CmQ" secondAttribute="trailing" constant="58" id="U8S-Wg-rp3"/>
-                                    <constraint firstItem="AkU-vp-RJ3" firstAttribute="top" secondItem="lon-fh-64E" secondAttribute="top" constant="47" id="oli-Ah-WsI"/>
-                                    <constraint firstAttribute="bottom" secondItem="3iJ-iM-CmQ" secondAttribute="bottom" id="vdh-2s-1vI"/>
-                                    <constraint firstItem="3iJ-iM-CmQ" firstAttribute="top" secondItem="lon-fh-64E" secondAttribute="top" constant="15" id="wpo-wU-Dju"/>
-                                </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Welcome" translatesAutoresizingMaskIntoConstraints="NO" id="AWe-8S-Swm">
-                                <rect key="frame" x="0.0" y="248" width="414" height="414"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="414" id="3Kl-r9-irw"/>
-                                    <constraint firstAttribute="width" constant="414" id="54o-e8-ws2"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Welcome" translatesAutoresizingMaskIntoConstraints="NO" id="AWe-8S-Swm">
+                                <rect key="frame" x="20" y="317" width="374" height="432"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ERv-16-YuQ"/>
                         <color key="backgroundColor" name="BrandPink"/>
-                        <constraints>
-                            <constraint firstItem="lon-fh-64E" firstAttribute="leading" secondItem="ERv-16-YuQ" secondAttribute="leading" id="Lmh-y5-r3T"/>
-                            <constraint firstItem="lon-fh-64E" firstAttribute="trailing" secondItem="ERv-16-YuQ" secondAttribute="trailing" id="O0C-59-8Js"/>
-                            <constraint firstItem="AWe-8S-Swm" firstAttribute="leading" secondItem="ERv-16-YuQ" secondAttribute="leading" id="Yo9-T9-d1Q"/>
-                            <constraint firstItem="ERv-16-YuQ" firstAttribute="bottom" secondItem="AWe-8S-Swm" secondAttribute="bottom" constant="200" id="hjq-KD-IT6"/>
-                            <constraint firstItem="lon-fh-64E" firstAttribute="top" secondItem="ERv-16-YuQ" secondAttribute="top" id="q0w-nM-D9Q"/>
-                            <constraint firstItem="AWe-8S-Swm" firstAttribute="trailing" secondItem="ERv-16-YuQ" secondAttribute="trailing" id="wyM-BQ-hdx"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="eU6-lc-bjX">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="Fbd-QF-KE8"/>
@@ -351,7 +335,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="chy-Ry-bih"/>
+        <segue reference="rim-01-KRM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="213" height="378.5"/>

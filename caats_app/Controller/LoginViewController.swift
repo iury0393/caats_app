@@ -15,4 +15,7 @@ class LoginViewController: UIViewController {
     }
 
 
+    @IBAction func loginPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "LoginToHome", sender: self)
+    }
 }

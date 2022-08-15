@@ -15,5 +15,8 @@ class RegisterViewController: UIViewController {
     }
 
 
+    @IBAction func registerPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "LoginToHome", sender: self)
+    }
 }
 
