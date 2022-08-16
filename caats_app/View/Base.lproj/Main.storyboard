@@ -20,12 +20,12 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="uX6-fX-Nsq">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐱Caats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ar-qX-8yX">
-                                <rect key="frame" x="120" y="351" width="174" height="63"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caats" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ar-qX-8yX">
+                                <rect key="frame" x="139" y="351" width="136" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="d3n-6T-9vR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="50"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="55"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -85,6 +85,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="aQd-8c-0WL"/>
+                    <connections>
+                        <outlet property="titleLabel" destination="7Ar-qX-8yX" id="UNS-Zk-Yn8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -176,7 +179,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="qQY-NQ-kzZ" id="od0-HO-ctJ"/>
                         <outlet property="passwordTextField" destination="VxD-aL-yw1" id="BP8-F9-2Ov"/>
-                        <segue destination="wxB-fq-Njw" kind="show" identifier="RegisterToHome" id="rim-01-KRM"/>
+                        <segue destination="eJq-Hv-Xru" kind="show" identifier="RegisterToHome" id="rim-01-KRM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5B-L0-P38" sceneMemberID="firstResponder"/>
@@ -269,14 +272,14 @@
                     <connections>
                         <outlet property="emailTextField" destination="SGt-dF-wkc" id="U7p-F1-4dX"/>
                         <outlet property="passwordTextField" destination="QpS-Gm-8T2" id="qcd-j9-seF"/>
-                        <segue destination="wxB-fq-Njw" kind="show" identifier="LoginToHome" id="chy-Ry-bih"/>
+                        <segue destination="eJq-Hv-Xru" kind="show" identifier="LoginToHome" id="chy-Ry-bih"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y6D-ib-xTX" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2091" y="-283"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="9e2-uu-1Kb">
             <objects>
                 <viewController id="wxB-fq-Njw" customClass="HomeViewController" customModule="caats_app" customModuleProvider="target" sceneMemberID="viewController">
@@ -285,7 +288,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ds2-Wo-RLl">
-                                <rect key="frame" x="0.0" y="88" width="414" height="704"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="655"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ERv-16-YuQ"/>
@@ -297,6 +300,7 @@
                             <constraint firstItem="ERv-16-YuQ" firstAttribute="bottom" secondItem="ds2-Wo-RLl" secondAttribute="bottom" constant="70" id="iii-9j-cQb"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="E8o-Uz-I4i"/>
                     <navigationItem key="navigationItem" id="eU6-lc-bjX">
                         <barButtonItem key="rightBarButtonItem" title="Log Out" id="Fbd-QF-KE8">
                             <connections>
@@ -310,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wnZ-3v-mu2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3250.7246376811595" y="79.6875"/>
+            <point key="canvasLocation" x="4251" y="-1035"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Ke-Hx-txW">
@@ -330,14 +334,118 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bMO-n1-f5B">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eJq-Hv-Xru" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="MWZ-cS-2YC"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ltY-FS-Yh6">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="wxB-fq-Njw" kind="relationship" relationship="viewControllers" id="Hy8-xj-yCZ"/>
+                        <segue destination="ujj-7r-BKM" kind="relationship" relationship="viewControllers" id="Dri-M6-wGd"/>
+                        <segue destination="de8-qT-2AM" kind="relationship" relationship="viewControllers" id="RM6-fZ-YAc"/>
+                        <segue destination="Wt4-PI-eOE" kind="relationship" relationship="viewControllers" id="J0z-Bu-L13"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kPE-xq-AbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3250.7246376811595" y="79.6875"/>
+        </scene>
+        <!--Text-->
+        <scene sceneID="zRO-CR-sNQ">
+            <objects>
+                <viewController id="de8-qT-2AM" customClass="TextViewController" customModule="caats_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ObQ-UQ-wSS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ViewController Example2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iin-f0-wqp">
+                                <rect key="frame" x="52" y="422" width="310" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0x7-rz-3Hb"/>
+                        <color key="backgroundColor" name="BrandDarkYellow"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Text" image="text.book.closed" catalog="system" id="WdR-Y0-CzH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rNm-iG-77z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4241" y="475"/>
+        </scene>
+        <!--Tag-->
+        <scene sceneID="Neu-I9-y3l">
+            <objects>
+                <viewController id="ujj-7r-BKM" customClass="TagViewController" customModule="caats_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ViJ-xU-rjg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ViewController Example1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHN-8C-Sk8">
+                                <rect key="frame" x="52" y="422" width="310" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S5e-a5-qO1"/>
+                        <color key="backgroundColor" name="BrandBlue"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tag" image="tag" catalog="system" id="quI-V0-lCk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i6v-mc-Wt6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4252" y="-283"/>
+        </scene>
+        <!--Gif-->
+        <scene sceneID="wBA-Xq-XKA">
+            <objects>
+                <viewController id="Wt4-PI-eOE" customClass="GifViewController" customModule="caats_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xXp-Ow-Via">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ViewController Example3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQb-aD-OmZ">
+                                <rect key="frame" x="52" y="422" width="310" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8p7-qJ-YBS"/>
+                        <color key="backgroundColor" name="BrandYellow"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gif" image="gift" catalog="system" id="qZV-WU-zdc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SB7-hO-erT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4251" y="1240"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="chy-Ry-bih"/>
+        <segue reference="rim-01-KRM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Background" width="213" height="378.5"/>
         <image name="Welcome" width="432" height="432"/>
+        <image name="gift" catalog="system" width="128" height="124"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="tag" catalog="system" width="128" height="119"/>
+        <image name="text.book.closed" catalog="system" width="115" height="128"/>
         <image name="textfield" width="298" height="93"/>
+        <namedColor name="BrandBlue">
+            <color red="0.75700002908706665" green="0.93699997663497925" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="BrandDarkYellow">
             <color red="1" green="0.85900002717971802" blue="0.64300000667572021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

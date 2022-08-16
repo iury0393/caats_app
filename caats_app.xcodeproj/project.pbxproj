@@ -24,6 +24,9 @@
 		8A73555B28AA806D00678D21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73555A28AA806D00678D21 /* Constants.swift */; };
 		8A73556728AAE1DE00678D21 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8A73556628AAE1DE00678D21 /* AlamofireImage */; };
 		8A7813A228ABBD23004FED7F /* CatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7813A128ABBD23004FED7F /* CatManager.swift */; };
+		8A7813A428ABC30F004FED7F /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7813A328ABC30F004FED7F /* TagViewController.swift */; };
+		8A7813A628ABC329004FED7F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7813A528ABC329004FED7F /* TextViewController.swift */; };
+		8A7813A828ABC387004FED7F /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7813A728ABC387004FED7F /* GifViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		8A73555328A5B40400678D21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8A73555A28AA806D00678D21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8A7813A128ABBD23004FED7F /* CatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatManager.swift; sourceTree = "<group>"; };
+		8A7813A328ABC30F004FED7F /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
+		8A7813A528ABC329004FED7F /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		8A7813A728ABC387004FED7F /* GifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
 		EC7AEAA80BABE4DC8D735B63 /* Pods-caats_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caats_app.release.xcconfig"; path = "Target Support Files/Pods-caats_app/Pods-caats_app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,7 +134,7 @@
 				8A73553528A5AF6400678D21 /* WelcomeViewController.swift */,
 				8A73554F28A5B39E00678D21 /* LoginViewController.swift */,
 				8A73555128A5B3AB00678D21 /* RegisterViewController.swift */,
-				8A73555328A5B40400678D21 /* HomeViewController.swift */,
+				8A7813A928ABC3B9004FED7F /* TabControllers */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -147,6 +153,17 @@
 				8A7813A128ABBD23004FED7F /* CatManager.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8A7813A928ABC3B9004FED7F /* TabControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8A73555328A5B40400678D21 /* HomeViewController.swift */,
+				8A7813A328ABC30F004FED7F /* TagViewController.swift */,
+				8A7813A528ABC329004FED7F /* TextViewController.swift */,
+				8A7813A728ABC387004FED7F /* GifViewController.swift */,
+			);
+			path = TabControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +298,10 @@
 				8A73553628A5AF6400678D21 /* WelcomeViewController.swift in Sources */,
 				8A73553228A5AF6400678D21 /* AppDelegate.swift in Sources */,
 				8A73555B28AA806D00678D21 /* Constants.swift in Sources */,
+				8A7813A628ABC329004FED7F /* TextViewController.swift in Sources */,
+				8A7813A828ABC387004FED7F /* GifViewController.swift in Sources */,
 				8A73553428A5AF6400678D21 /* SceneDelegate.swift in Sources */,
+				8A7813A428ABC30F004FED7F /* TagViewController.swift in Sources */,
 				8A7813A228ABBD23004FED7F /* CatManager.swift in Sources */,
 				8A73555428A5B40400678D21 /* HomeViewController.swift in Sources */,
 			);
