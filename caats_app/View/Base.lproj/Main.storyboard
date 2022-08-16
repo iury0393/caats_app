@@ -385,6 +385,7 @@
                                             <color key="titleColor" red="0.10692868379999999" green="0.26320910450000001" blue="0.28432592750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
+                                            <action selector="generatePressed:" destination="de8-qT-2AM" eventType="touchUpInside" id="Q7I-DW-h5h"/>
                                             <action selector="registerPressed:" destination="hZC-pX-yTJ" eventType="touchUpInside" id="KHA-4H-o70"/>
                                         </connections>
                                     </button>
@@ -420,6 +421,10 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Text" image="text.book.closed" catalog="system" id="WdR-Y0-CzH"/>
+                    <connections>
+                        <outlet property="catImage" destination="ebA-0Y-idm" id="bZa-vw-QGY"/>
+                        <outlet property="wordTextField" destination="IGC-d9-2oY" id="etg-6L-fq4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rNm-iG-77z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -432,14 +437,59 @@
                     <view key="view" contentMode="scaleToFill" id="ViJ-xU-rjg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nKc-iL-nMN">
+                                <rect key="frame" x="0.0" y="88" width="414" height="269"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4PZ-UD-OAI">
+                                        <rect key="frame" x="47" y="0.0" width="320" height="216"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64C-4U-cGl">
+                                        <rect key="frame" x="58" y="221" width="298" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <state key="normal" title="Generate">
+                                            <color key="titleColor" red="0.10692868379999999" green="0.26320910450000001" blue="0.28432592750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="generatePressed:" destination="ujj-7r-BKM" eventType="touchUpInside" id="BQS-yP-aQd"/>
+                                            <action selector="registerPressed:" destination="hZC-pX-yTJ" eventType="touchUpInside" id="0TG-Bl-7Qk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="64C-4U-cGl" firstAttribute="leading" secondItem="nKc-iL-nMN" secondAttribute="leading" constant="58" id="3ST-n2-DCT"/>
+                                    <constraint firstItem="64C-4U-cGl" firstAttribute="centerX" secondItem="nKc-iL-nMN" secondAttribute="centerX" id="EJH-Yf-kpO"/>
+                                    <constraint firstItem="64C-4U-cGl" firstAttribute="centerX" secondItem="4PZ-UD-OAI" secondAttribute="centerX" id="jZQ-EL-I41"/>
+                                    <constraint firstItem="64C-4U-cGl" firstAttribute="top" secondItem="4PZ-UD-OAI" secondAttribute="bottom" constant="5" id="jeb-mx-aOk"/>
+                                    <constraint firstAttribute="bottom" secondItem="64C-4U-cGl" secondAttribute="bottom" id="q8W-7X-rpw"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="m9p-qp-vsk">
+                                <rect key="frame" x="0.0" y="357" width="414" height="426"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="S5e-a5-qO1"/>
                         <color key="backgroundColor" name="BrandBlue"/>
+                        <constraints>
+                            <constraint firstItem="m9p-qp-vsk" firstAttribute="top" secondItem="nKc-iL-nMN" secondAttribute="bottom" id="24K-kb-Ad8"/>
+                            <constraint firstItem="nKc-iL-nMN" firstAttribute="leading" secondItem="m9p-qp-vsk" secondAttribute="leading" id="47h-Nw-XJn"/>
+                            <constraint firstItem="m9p-qp-vsk" firstAttribute="trailing" secondItem="S5e-a5-qO1" secondAttribute="trailing" id="DH8-YS-uej"/>
+                            <constraint firstItem="S5e-a5-qO1" firstAttribute="bottom" secondItem="m9p-qp-vsk" secondAttribute="bottom" constant="30" id="QhD-61-dXJ"/>
+                            <constraint firstAttribute="bottom" secondItem="nKc-iL-nMN" secondAttribute="bottom" constant="539" id="S9u-iG-6ig"/>
+                            <constraint firstItem="nKc-iL-nMN" firstAttribute="top" secondItem="S5e-a5-qO1" secondAttribute="top" id="Swy-lr-3kn"/>
+                            <constraint firstItem="m9p-qp-vsk" firstAttribute="leading" secondItem="S5e-a5-qO1" secondAttribute="leading" id="cdw-s0-nwO"/>
+                            <constraint firstItem="nKc-iL-nMN" firstAttribute="trailing" secondItem="m9p-qp-vsk" secondAttribute="trailing" id="j8h-0O-huf"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Tag" image="tag" catalog="system" id="quI-V0-lCk"/>
+                    <connections>
+                        <outlet property="catImage" destination="m9p-qp-vsk" id="EJ0-xO-pAK"/>
+                        <outlet property="tagPick" destination="4PZ-UD-OAI" id="GwF-mK-crh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6v-mc-Wt6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4252" y="-283"/>
+            <point key="canvasLocation" x="4250.7246376811599" y="-283.25892857142856"/>
         </scene>
         <!--Gif-->
         <scene sceneID="wBA-Xq-XKA">
@@ -463,6 +513,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Gif" image="gift" catalog="system" id="qZV-WU-zdc"/>
+                    <connections>
+                        <outlet property="catGif" destination="CN5-VE-aju" id="qha-8O-uuZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SB7-hO-erT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
