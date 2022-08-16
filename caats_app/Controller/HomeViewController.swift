@@ -7,14 +7,19 @@
 
 import UIKit
 import FirebaseAuth
-import Alamofire
+import MBProgressHUD
 
-class HomeViewController: UIViewController {    
+class HomeViewController: UIViewController {
     @IBOutlet weak var randomCatImage: UIImageView!
+    
+    var catManager = CatManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        catManager.delegate = self
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        catManager.getRandomCat()
     }
     
     
@@ -27,7 +32,14 @@ class HomeViewController: UIViewController {
         }
     }
     
-    @IBAction func randomPressed(_ sender: UIButton) {
+}
+//MARK: - CatManagerDelegate
 
+extension HomeViewController: CatManagerDelegate {
+    func didUpdateRandomCat(data: Data) {
+        DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
+            self.randomCatImage.image = UIImage(data: data)
+        }
     }
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		45602A083EAC50310CB9B131 /* Pods_caats_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 784744C8FEC45DA53654C35A /* Pods_caats_app.framework */; };
+		8A50DB5528AAE989001D792D /* MBProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 8A50DB5428AAE989001D792D /* MBProgressHUD */; };
 		8A73553228A5AF6400678D21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73553128A5AF6400678D21 /* AppDelegate.swift */; };
 		8A73553428A5AF6400678D21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73553328A5AF6400678D21 /* SceneDelegate.swift */; };
 		8A73553628A5AF6400678D21 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73553528A5AF6400678D21 /* WelcomeViewController.swift */; };
@@ -22,7 +23,7 @@
 		8A73555428A5B40400678D21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73555328A5B40400678D21 /* HomeViewController.swift */; };
 		8A73555B28AA806D00678D21 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A73555A28AA806D00678D21 /* Constants.swift */; };
 		8A73556728AAE1DE00678D21 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 8A73556628AAE1DE00678D21 /* AlamofireImage */; };
-		8A73556A28AAE26A00678D21 /* AlamofireNetworkActivityIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = 8A73556928AAE26A00678D21 /* AlamofireNetworkActivityIndicator */; };
+		8A7813A228ABBD23004FED7F /* CatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7813A128ABBD23004FED7F /* CatManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		8A73555128A5B3AB00678D21 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		8A73555328A5B40400678D21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8A73555A28AA806D00678D21 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		8A7813A128ABBD23004FED7F /* CatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatManager.swift; sourceTree = "<group>"; };
 		EC7AEAA80BABE4DC8D735B63 /* Pods-caats_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caats_app.release.xcconfig"; path = "Target Support Files/Pods-caats_app/Pods-caats_app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,9 +51,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A50DB5528AAE989001D792D /* MBProgressHUD in Frameworks */,
 				45602A083EAC50310CB9B131 /* Pods_caats_app.framework in Frameworks */,
 				8A73556728AAE1DE00678D21 /* AlamofireImage in Frameworks */,
-				8A73556A28AAE26A00678D21 /* AlamofireNetworkActivityIndicator in Frameworks */,
 				8A73554A28A5B24700678D21 /* FirebaseAuth in Frameworks */,
 				8A73554C28A5B24700678D21 /* FirebaseFirestore in Frameworks */,
 			);
@@ -142,6 +144,7 @@
 		8A73556228AAC08D00678D21 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8A7813A128ABBD23004FED7F /* CatManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,7 +171,7 @@
 				8A73554928A5B24700678D21 /* FirebaseAuth */,
 				8A73554B28A5B24700678D21 /* FirebaseFirestore */,
 				8A73556628AAE1DE00678D21 /* AlamofireImage */,
-				8A73556928AAE26A00678D21 /* AlamofireNetworkActivityIndicator */,
+				8A50DB5428AAE989001D792D /* MBProgressHUD */,
 			);
 			productName = caats_app;
 			productReference = 8A73552E28A5AF6400678D21 /* caats_app.app */;
@@ -201,7 +204,7 @@
 			packageReferences = (
 				8A73554828A5B24700678D21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				8A73556528AAE1DE00678D21 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
-				8A73556828AAE26A00678D21 /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityIndicator" */,
+				8A50DB5328AAE989001D792D /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
 			);
 			productRefGroup = 8A73552F28A5AF6400678D21 /* Products */;
 			projectDirPath = "";
@@ -279,6 +282,7 @@
 				8A73553228A5AF6400678D21 /* AppDelegate.swift in Sources */,
 				8A73555B28AA806D00678D21 /* Constants.swift in Sources */,
 				8A73553428A5AF6400678D21 /* SceneDelegate.swift in Sources */,
+				8A7813A228ABBD23004FED7F /* CatManager.swift in Sources */,
 				8A73555428A5B40400678D21 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -503,6 +507,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8A50DB5328AAE989001D792D /* XCRemoteSwiftPackageReference "MBProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jdg/MBProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
 		8A73554828A5B24700678D21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -519,17 +531,14 @@
 				minimumVersion = 4.2.0;
 			};
 		};
-		8A73556828AAE26A00678D21 /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityIndicator" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/AlamofireNetworkActivityIndicator";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8A50DB5428AAE989001D792D /* MBProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A50DB5328AAE989001D792D /* XCRemoteSwiftPackageReference "MBProgressHUD" */;
+			productName = MBProgressHUD;
+		};
 		8A73554928A5B24700678D21 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 8A73554828A5B24700678D21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -544,11 +553,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8A73556528AAE1DE00678D21 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
 			productName = AlamofireImage;
-		};
-		8A73556928AAE26A00678D21 /* AlamofireNetworkActivityIndicator */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8A73556828AAE26A00678D21 /* XCRemoteSwiftPackageReference "AlamofireNetworkActivityIndicator" */;
-			productName = AlamofireNetworkActivityIndicator;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
