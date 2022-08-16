@@ -25,7 +25,8 @@ protocol CatManagerRandomGifDelegate {
 }
 
 struct CatManager {
-    var delegate: CatManagerRandomImageDelegate?
+    var delegateImage: CatManagerRandomImageDelegate?
+    var delegateText: CatManagerImageTextDelegate?
     let url = "https://cataas.com/c"
     
     func getRandomCat() {
@@ -36,7 +37,28 @@ struct CatManager {
             case .success(let data):
                 switch response.response?.statusCode {
                 case 200, 204:
-                    delegate?.didUpdateRandomCat(data: data!)
+                    delegateImage?.didUpdateRandomCat(data: data!)
+                case 500:
+                    debugPrint("Error 500")
+                default:
+                    debugPrint("Erro default")
+                }
+            case .failure(let error):
+                debugPrint(error)
+            }
+        }
+    }
+    
+    func getRandomCat(text: String) {
+        let newUrl = "\(url)/s/\(text)"
+        AF.request(newUrl)
+        .validate(statusCode: 200..<500)
+        .response { response in
+            switch response.result {
+            case .success(let data):
+                switch response.response?.statusCode {
+                case 200, 204:
+                    delegateText?.didUpdateImageText(data: data!)
                 case 500:
                     debugPrint("Error 500")
                 default:

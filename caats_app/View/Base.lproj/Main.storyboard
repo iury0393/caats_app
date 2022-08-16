@@ -302,11 +302,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="E8o-Uz-I4i"/>
                     <navigationItem key="navigationItem" id="eU6-lc-bjX">
-                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="Fbd-QF-KE8">
-                            <connections>
-                                <action selector="logoutPressed:" destination="wxB-fq-Njw" id="YgQ-8t-s92"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="Fbd-QF-KE8"/>
                     </navigationItem>
                     <connections>
                         <outlet property="randomCatImage" destination="ds2-Wo-RLl" id="nKw-uM-s5y"/>
@@ -334,12 +330,19 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="79.6875"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="bMO-n1-f5B">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eJq-Hv-Xru" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eJq-Hv-Xru" customClass="TabBarViewController" customModule="caats_app" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="MWZ-cS-2YC"/>
+                    <navigationItem key="navigationItem" id="MWZ-cS-2YC">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="oGb-cp-uX6">
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <connections>
+                                <action selector="logOutPressed:" destination="eJq-Hv-Xru" id="prX-cU-Tbv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ltY-FS-Yh6">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>

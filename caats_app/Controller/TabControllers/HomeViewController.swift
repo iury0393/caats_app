@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import FirebaseAuth
 import MBProgressHUD
 
 class HomeViewController: UIViewController {
@@ -16,21 +15,10 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.hidesBackButton = true
         tabBarController?.delegate = self
-        catManager.delegate = self
+        catManager.delegateImage = self
         MBProgressHUD.showAdded(to: self.view, animated: true)
         catManager.getRandomCat()
-    }
-    
-    
-    @IBAction func logoutPressed(_ sender: UIBarButtonItem) {
-        do {
-            try Auth.auth().signOut()
-            navigationController?.popToRootViewController(animated: true)
-        } catch let signOutError as NSError {
-            print("Error signing out: %@", signOutError)
-        }
     }
     
 }

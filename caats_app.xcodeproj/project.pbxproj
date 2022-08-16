@@ -26,6 +26,7 @@
 		8A7813A428ABC30F004FED7F /* TagViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7813A328ABC30F004FED7F /* TagViewController.swift */; };
 		8A7813A628ABC329004FED7F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7813A528ABC329004FED7F /* TextViewController.swift */; };
 		8A7813A828ABC387004FED7F /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7813A728ABC387004FED7F /* GifViewController.swift */; };
+		8A7813AB28ABFD75004FED7F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7813AA28ABFD75004FED7F /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		8A7813A328ABC30F004FED7F /* TagViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagViewController.swift; sourceTree = "<group>"; };
 		8A7813A528ABC329004FED7F /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		8A7813A728ABC387004FED7F /* GifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
+		8A7813AA28ABFD75004FED7F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		EC7AEAA80BABE4DC8D735B63 /* Pods-caats_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caats_app.release.xcconfig"; path = "Target Support Files/Pods-caats_app/Pods-caats_app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -160,6 +162,7 @@
 				8A7813A328ABC30F004FED7F /* TagViewController.swift */,
 				8A7813A528ABC329004FED7F /* TextViewController.swift */,
 				8A7813A728ABC387004FED7F /* GifViewController.swift */,
+				8A7813AA28ABFD75004FED7F /* TabBarViewController.swift */,
 			);
 			path = TabControllers;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				8A73555228A5B3AB00678D21 /* RegisterViewController.swift in Sources */,
 				8A73553628A5AF6400678D21 /* WelcomeViewController.swift in Sources */,
 				8A73553228A5AF6400678D21 /* AppDelegate.swift in Sources */,
+				8A7813AB28ABFD75004FED7F /* TabBarViewController.swift in Sources */,
 				8A73555B28AA806D00678D21 /* Constants.swift in Sources */,
 				8A7813A628ABC329004FED7F /* TextViewController.swift in Sources */,
 				8A7813A828ABC387004FED7F /* GifViewController.swift in Sources */,
