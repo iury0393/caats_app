@@ -6,14 +6,29 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 class GifViewController: UIViewController {
 
     @IBOutlet weak var catGif: UIImageView!
     
+    var catManager = CatManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        catManager.delegateGif = self
+        MBProgressHUD.showAdded(to: self.view, animated: true)
+        catManager.getRandomGif()
+        
+    }
+}
+//MARK: - CatManagerRandomGifDelegate
 
-        // Do any additional setup after loading the view.
+extension GifViewController: CatManagerRandomGifDelegate {
+    func didUpdateRandomGif(data: Data) {
+        DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
+            self.catGif.image = UIImage.gifImageWithData(data)
+        }
     }
 }

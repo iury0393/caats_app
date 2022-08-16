@@ -27,6 +27,8 @@
 		8A7813A628ABC329004FED7F /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7813A528ABC329004FED7F /* TextViewController.swift */; };
 		8A7813A828ABC387004FED7F /* GifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7813A728ABC387004FED7F /* GifViewController.swift */; };
 		8A7813AB28ABFD75004FED7F /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7813AA28ABFD75004FED7F /* TabBarViewController.swift */; };
+		8A7813AE28AC0210004FED7F /* Gifu in Frameworks */ = {isa = PBXBuildFile; productRef = 8A7813AD28AC0210004FED7F /* Gifu */; };
+		8A7813B228AC033A004FED7F /* GifLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A7813B128AC033A004FED7F /* GifLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,7 @@
 		8A7813A528ABC329004FED7F /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
 		8A7813A728ABC387004FED7F /* GifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifViewController.swift; sourceTree = "<group>"; };
 		8A7813AA28ABFD75004FED7F /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		8A7813B128AC033A004FED7F /* GifLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifLoader.swift; sourceTree = "<group>"; };
 		EC7AEAA80BABE4DC8D735B63 /* Pods-caats_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caats_app.release.xcconfig"; path = "Target Support Files/Pods-caats_app/Pods-caats_app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +64,7 @@
 				8A50DB5528AAE989001D792D /* MBProgressHUD in Frameworks */,
 				45602A083EAC50310CB9B131 /* Pods_caats_app.framework in Frameworks */,
 				8A73554A28A5B24700678D21 /* FirebaseAuth in Frameworks */,
+				8A7813AE28AC0210004FED7F /* Gifu in Frameworks */,
 				8A73554C28A5B24700678D21 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				8A73555A28AA806D00678D21 /* Constants.swift */,
+				8A7813B128AC033A004FED7F /* GifLoader.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -189,6 +194,7 @@
 				8A73554928A5B24700678D21 /* FirebaseAuth */,
 				8A73554B28A5B24700678D21 /* FirebaseFirestore */,
 				8A50DB5428AAE989001D792D /* MBProgressHUD */,
+				8A7813AD28AC0210004FED7F /* Gifu */,
 			);
 			productName = caats_app;
 			productReference = 8A73552E28A5AF6400678D21 /* caats_app.app */;
@@ -221,6 +227,7 @@
 			packageReferences = (
 				8A73554828A5B24700678D21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				8A50DB5328AAE989001D792D /* XCRemoteSwiftPackageReference "MBProgressHUD" */,
+				8A7813AC28AC0210004FED7F /* XCRemoteSwiftPackageReference "Gifu" */,
 			);
 			productRefGroup = 8A73552F28A5AF6400678D21 /* Products */;
 			projectDirPath = "";
@@ -298,6 +305,7 @@
 				8A73553228A5AF6400678D21 /* AppDelegate.swift in Sources */,
 				8A7813AB28ABFD75004FED7F /* TabBarViewController.swift in Sources */,
 				8A73555B28AA806D00678D21 /* Constants.swift in Sources */,
+				8A7813B228AC033A004FED7F /* GifLoader.swift in Sources */,
 				8A7813A628ABC329004FED7F /* TextViewController.swift in Sources */,
 				8A7813A828ABC387004FED7F /* GifViewController.swift in Sources */,
 				8A73553428A5AF6400678D21 /* SceneDelegate.swift in Sources */,
@@ -543,6 +551,14 @@
 				minimumVersion = 9.0.0;
 			};
 		};
+		8A7813AC28AC0210004FED7F /* XCRemoteSwiftPackageReference "Gifu" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kaishin/Gifu.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -560,6 +576,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 8A73554828A5B24700678D21 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		8A7813AD28AC0210004FED7F /* Gifu */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8A7813AC28AC0210004FED7F /* XCRemoteSwiftPackageReference "Gifu" */;
+			productName = Gifu;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
