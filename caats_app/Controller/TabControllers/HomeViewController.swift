@@ -17,6 +17,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true
+        tabBarController?.delegate = self
         catManager.delegate = self
         MBProgressHUD.showAdded(to: self.view, animated: true)
         catManager.getRandomCat()
@@ -35,11 +36,24 @@ class HomeViewController: UIViewController {
 }
 //MARK: - CatManagerDelegate
 
-extension HomeViewController: CatManagerDelegate {
+extension HomeViewController: CatManagerRandomImageDelegate {
     func didUpdateRandomCat(data: Data) {
         DispatchQueue.main.async {
             MBProgressHUD.hide(for: self.view, animated: true)
             self.randomCatImage.image = UIImage(data: data)
+        }
+    }
+}
+//MARK: - UITabBarControllerDelegate
+
+extension HomeViewController: UITabBarControllerDelegate {
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        if let index = tabBarController.viewControllers?.firstIndex(of: viewController) {
+            if index == 0 {
+                MBProgressHUD.showAdded(to: self.view, animated: true)
+                catManager.getRandomCat()
+            } else if index == 3 {
+            }
         }
     }
 }

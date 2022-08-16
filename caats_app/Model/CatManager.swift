@@ -8,12 +8,24 @@
 import Foundation
 import Alamofire
 
-protocol CatManagerDelegate {
+protocol CatManagerRandomImageDelegate {
     func didUpdateRandomCat(data: Data)
 }
 
+protocol CatManagerImageTagDelegate {
+    func didUpdateImageTag(data: Data)
+}
+
+protocol CatManagerImageTextDelegate {
+    func didUpdateImageText(data: Data)
+}
+
+protocol CatManagerRandomGifDelegate {
+    func didUpdateRandomGif(data: Data)
+}
+
 struct CatManager {
-    var delegate: CatManagerDelegate?
+    var delegate: CatManagerRandomImageDelegate?
     let url = "https://cataas.com/c"
     
     func getRandomCat() {
